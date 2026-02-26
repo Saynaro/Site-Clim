@@ -361,11 +361,16 @@ h3{
 
 
 .last-row{
-    justify-content: center;
-    justify-items: center;
-    align-content: center;
     height: 50vh;
     margin-bottom: 100px;
+    /* Добавляем Flexbox */
+    display: flex;
+    flex-direction: column; /* Элементы будут друг под другом */
+    align-items: center;    /* Центрирование по горизонтали */
+    justify-content: center; /* Центрирование по вертикали */
+    
+    /* Текст внутри тоже должен быть отцентрован */
+    text-align: center;
 }
 .last-button{
     display: flex;

@@ -431,10 +431,16 @@ h3{
 
 .last-row{
     background-color: #3966E5;
-    justify-content: center;
-    justify-items: center;
-    align-content: center;
     height: 50vh;
+
+    /* Добавляем Flexbox */
+    display: flex;
+    flex-direction: column; /* Элементы будут друг под другом */
+    align-items: center;    /* Центрирование по горизонтали */
+    justify-content: center; /* Центрирование по вертикали */
+    
+    /* Текст внутри тоже должен быть отцентрован */
+    text-align: center;
 }
 .last-button{
     display: flex;
