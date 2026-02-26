@@ -105,6 +105,7 @@ nav {
     flex-direction: column;
     text-align: center;
     justify-self: center;
+    align-items: center;
     margin: 10vh auto;
     width: 70%;
 }
