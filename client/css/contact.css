@@ -102,9 +102,12 @@ nav {
     top: 9px;
 }
 .text{
+    display: flex;
+    flex-direction: column;
     text-align: center;
     justify-self: center;
-    margin: 10vh;
+    align-items: center;
+    margin: 10vh auto;
     width: 70%;
 }
 .contacter{

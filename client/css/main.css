@@ -5,6 +5,9 @@
     font-family: Arial, sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
 body {
     background: #0B0E19;
     color: #f9fafb;
