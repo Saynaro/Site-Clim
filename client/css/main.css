@@ -196,6 +196,7 @@ nav {
     display: grid;
     grid-template-columns: repeat(2, auto);
     justify-content: center;
+    justify-items: center;
     gap: 50px;
 }
 .demande{
@@ -580,15 +581,20 @@ h3{
     
 }
 .buttons{
-    
+    display: grid;
     justify-items: center;
+    justify-content: center;
+    justify-self: center;
+    margin: auto;
     grid-template-columns: 1fr;
     gap: 0;
 }
 .demande{
+    justify-self: center;
     width: 90%;
 }
 .appelle{
+    justify-self: center;
     width: 90%;
 }
 .first-row {
