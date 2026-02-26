@@ -588,20 +588,20 @@ h3{
     line-height: 4rem;
     
 }
-.buttons{
-    display: grid;
-    justify-items: center;
-    justify-content: center;
-    margin-top: 20px;
-    grid-template-columns: 1fr;
-    gap: 0;
+.buttons {
+    display: flex;       /* Переключаем на flex для лучшего контроля */
+    flex-direction: column; /* Кнопки в столбик */
+    align-items: center;
+    gap: 12px;           /* Четкий отступ МЕЖДУ кнопками */
+    margin-top: 30px;    /* Отступ от текста до первой кнопки */
 }
-.demande{
-    width: 90%;
+
+.demande, .appelle {
+    width: 80%;          /* Ширина кнопок на мобильном */
+    margin-top: 0;       /* Обнуляем старый маржин, чтобы работал gap */
+    height: 60px;        /* Чуть уменьшим высоту для мобилок (по желанию) */
 }
-.appelle{
-    width: 90%;
-}
+
 .first-row {
     height: auto;
     grid-template-columns: 1fr; /* 3 блока в столбик */
