@@ -209,10 +209,11 @@ nav {
     background-color: #4E80EE;
     color: #f9fafb;
     border: none;
-    padding: 20px;
     border-radius: 8px;
+    width: 100%;      /* Кнопка растянется на всю ширину ссылки */
+    height: 70px;     
     margin-top: 20px;
-    height: 10vh;
+    padding: 0 20px;  /* Горизонтальный отступ одинаковый */
     cursor: pointer;
 }
 .demande:hover{
@@ -228,11 +229,13 @@ nav {
     font-weight: 700;
     background-color: transparent;
     color: #f9fafb;
-    padding: 10px;
+    
     border-radius: 8px;
     border: 2px solid #1f2937;
+    width: 100%;      /* Кнопка растянется на всю ширину ссылки */
+    height: 70px;     
     margin-top: 20px;
-    height: 10vh;
+    padding: 0 20px;  /* Горизонтальный отступ одинаковый */
     cursor: pointer;
 }
 .appelle:hover{
@@ -242,7 +245,12 @@ nav {
 
 
 
-
+.buttons a {
+    width: 100%;
+    display: flex; /* Чтобы ссылка вела себя как блок */
+    justify-self: center; /* Центрирование по горизонтали */
+    justify-content: center;
+}
 
 
 
@@ -584,18 +592,15 @@ h3{
     display: grid;
     justify-items: center;
     justify-content: center;
-    justify-self: center;
-    margin: auto;
+    margin-top: 20px;
     grid-template-columns: 1fr;
     gap: 0;
 }
 .demande{
-    justify-self: center;
-    width: 90%;
+    width: 60%;
 }
 .appelle{
-    justify-self: center;
-    width: 90%;
+    width: 60%;
 }
 .first-row {
     height: auto;
