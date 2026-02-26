@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/contact.css">
+<title>SainAir</title>
+</head>
+<body>
+
+<nav>
+    <div class="nav-container">
+        <div class="logo sitename">SainAir</div>
+
+        <ul class="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+
+        <div class="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+        </div>
+    </div>
+</nav>
+<div class="text">
+    <h1 class="contacter">
+        Contactez-Nous
+    </h1>
+    <p class="info">Besoin d'un service de climatisation ? Remplissez le formulaire ci-dessous et nous vous répondrons dans les plus brefs délais.</p>
+</div>
+
+<div class="wrapper">
+
+    <!-- 1 Container — Forme -->
+<form id="my-form" action="https://formspree.io/f/mojnppdj" method="POST" class="container left-column">
+    <h2>Demande de Devis</h2>
+
+    <div class="form-group">
+        <label>Nom complet *</label>
+        <input type="text" name="name" placeholder="Jean Dupont" required>
+    </div>
+
+    <div class="form-group">
+        <label>Email *</label>
+        <input type="email" name="_replyto" placeholder="jean.dupont@example.com" required>
+    </div>
+
+    <div class="form-group">
+        <label>Téléphone *</label>
+        <input type="tel" name="phone" placeholder="+33 6 12 34 56 78" required>
+    </div>
+
+    <div class="form-group">
+        <label>Service demandé *</label>
+        <select name="service" required>
+            <option value="" disabled selected hidden>Sélectionnez un service</option>
+            <option value="installation">Installation de climatiseur</option>
+            <option value="reparation">Réparation</option>
+            <option value="maintenance">Entretien / Maintenance</option>
+            <option value="nettoyage">Nettoyage</option>
+            <option value="devis">Devis gratuit</option>
+            <option value="autre">Autre</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label>Message *</label>
+        <textarea name="message" placeholder="Décrivez votre besoin..." required></textarea>
+    </div>
+
+    <div id="status-message" style="display:none; margin-top:20px; padding:15px; border-radius:8px; background-color: #d4edda; color: #155724; border: 1px solid #c3e6cb; text-align: center;">
+        Votre demande a été enregistrée. Nous vous répondrons dans les plus brefs délais.
+    </div>
+    <button type="submit" class="envoyer">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-send-icon lucide-send">
+            <path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"/>
+            <path d="m21.854 2.147-10.94 10.939"/>
+        </svg>
+        Envoyer la demande
+    </button>
+</form>
+
+    <!-- Правая колонка -->
+    <div class="right-column" style="display:flex; flex-direction:column; gap:30px;">
+
+        <!-- 2 Контейнер — Контакты -->
+        <div class="container contact-info">
+        <h2 class="second-block-titre">Informations de Contact</h2>
+
+        <div class="contact-item">
+            <div class="icon"></div>
+            <div class="second-info">
+            <h3>Téléphone</h3>
+            <a href="" class="tel">+33 6 27 33 19 61</a>
+            <p>Disponible 7j/7 pour les urgences</p>
+            </div>
+        </div>
+
+        <div class="contact-item">
+            <div class="icon"></div>
+            <div class="second-info">
+            <h3>Email</h3>
+            <a href="" class="tel">sainairclim06@gmail.com</a>
+            <p>Réponse sous 24h</p>
+            </div>
+        </div>
+
+        <div class="contact-item localisation">
+            <div class="icon"></div>
+            <div class="second-info">
+            <h3>Localisation</h3>
+            <p>Nice et environs</p>
+            <p>Côte d'Azur, France</p>
+            </div>
+        </div>
+        </div>
+
+        <!-- 3 Контейнер — Часы работы -->
+        <div class="container">
+        <h2 class="horaires">Horaires d'Ouverture</h2>
+
+        <div class="hours-item">
+            <span>Lundi - Vendredi</span>
+            <strong>8h - 19h</strong>
+        </div>
+
+        <div class="hours-item">
+            <span>Samedi</span>
+            <strong>9h - 17h</strong>
+        </div>
+
+        <div class="hours-item">
+            <span>Dimanche</span>
+            <strong>Fermé</strong>
+        </div>
+
+        <p style="margin-top:15px; color:#4E80EE;">
+            * Interventions d'urgence disponibles 7j/7
+        </p>
+        </div>
+
+    </div>
+
+</div>
+
+
+<footer class="footer">
+            <div class="footer-container">
+                
+                <div class="footer-col">
+                    <h2 class="logotype">SainAir</h2>
+                    <p>
+                        Expert en climatisation à Nice.<br>
+                        Installation, réparation et entretien<br>
+                        professionnel.
+                    </p>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Contact</h3>
+                    <p>Nice, France</p>
+                    <a href="tel:+33627331961" class="phone">
+                        +33 6 27 33 19 61
+                    </a>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Horaires</h3>
+                    <p>Lun - Sam: 8h - 19h</p>
+                    <p>Dimanche: Fermé</p>
+                </div>
+
+            </div>
+
+            <div class="footer-divider"></div>
+
+            <div class="footer-bottom">
+                © 2026 SainAir. Tous droits réservés.
+            </div>
+</footer>
+
+<script src="js/utils/burgerMenu.js"></script>
+<script src="js/contact.js"></script>
+</body>
+</html>

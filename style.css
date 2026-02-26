@@ -1,0 +1,186 @@
+body {
+    margin: 0;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.logo svg {
+    width: 300px;
+    height: 500px;
+}   
+
+
+/* #snowflake {
+    animation: spin 6s linear infinite,
+               float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(8px); }
+    100% { transform: translateY(0); }
+} */
+
+
+#snowflake {
+    animation: spin 5s linear infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+
+
+
+
+
+/* Вариант красивого холодного свечения */
+
+
+/* #text, */
+#titre {
+    fill: white;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        filter: drop-shadow(0 0 2px #fff)
+                drop-shadow(0 0 3px #5BA4C9);
+    }
+    to {
+        filter: drop-shadow(0 0 3px #fff)
+                drop-shadow(0 0 5px #5BA4C9)
+                drop-shadow(0 0 10px #5BA4C9);
+    }
+}
+
+
+
+
+#text {
+    fill: white;
+    animation: glowText 2s ease-in-out infinite alternate;
+}
+
+@keyframes glowText {
+    from {
+        filter: drop-shadow(0 0 1px #fff)
+                drop-shadow(0 0 1px #5BA4C9);
+    }
+    to {
+        filter: drop-shadow(0 0 1px #fff)
+                drop-shadow(0 0 2px #5BA4C9)
+                drop-shadow(0 0 4px #5BA4C9);
+                
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* более «искрящееся» мерцание */
+/* @keyframes sparkle {
+    0%   { opacity: 1; }
+    50%  { opacity: 0.7; }
+    100% { opacity: 1; }
+}
+
+#text,
+#titre {
+    animation: sparkle 1.2s infinite;
+} */
+
+
+
+
+
+
+
+.wind1, .wind2 {
+  stroke-dasharray: 1500; /* длина пути примерно */  /* попробуй 500*/
+  stroke-dashoffset: 1500; /* скрываем весь путь */
+  animation: drawWind 2s linear forwards infinite; /* alternante в конце чтобы было туда обратно */
+}
+
+.wind2 {
+  stroke-dashoffset: -1500; /* скрываем путь с конца */
+  animation-delay: 0s; /* можно задержать вторую линию */
+}
+
+@keyframes drawWind {
+  0% {
+    /* оставляем dashoffset как есть для каждого path */
+  }
+  100% {
+    stroke-dashoffset: 0; /* полностью нарисовать */
+  }
+}
+
+
+
+
+
+/*
+#wind {
+  stroke-dasharray: 1600; 
+  stroke-dashoffset: 400; 
+  animation: drawWind 2s linear infinite;
+}
+
+ @keyframes drawWind {
+  0% {
+    stroke-dashoffset: 400;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+} */
+
+
+
+
+
+
+
+/* #wind {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: drawWind 3s ease-out forwards infinite;
+}
+
+@keyframes drawWind {
+    to {
+        stroke-dashoffset: 0;
+    }
+} */
+
+
+/* #wind {
+    animation: windWave 2s ease-in-out infinite;
+    transform-origin: center;
+}
+
+@keyframes windWave {
+    0%   { transform: rotate(0deg); }
+    25%  { transform: rotate(2deg); }
+    50%  { transform: rotate(-2deg); }
+    75%  { transform: rotate(1deg); }
+    100% { transform: rotate(0deg); }
+} */
