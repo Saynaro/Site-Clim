@@ -15,7 +15,9 @@ nav {
     background: #121826;
     border-bottom: 1px solid #1f2937;
     padding: 18px 40px;
-    position: relative;
+    position: sticky; /* Делает элемент "липким" */
+    top: 0;           /* Прижимает к самому верху экрана */
+    z-index: 1000;    /* Чтобы меню было поверх остальных элементов */
 }
 
 /* Container */
@@ -379,15 +381,16 @@ button:hover {
 }
 .wrapper {
     grid-template-columns: 1fr;
+    width: 95%;
 }
 .text{
     text-align: center;
     justify-self: center;
     margin: 10vh;
-    width: 100%;
+    width: 95%;
 }
 .contacter{
-    font-size: 4rem;
+    font-size: 3.5rem;
     margin-bottom: 20px;
 }
 .info{
@@ -397,7 +400,7 @@ button:hover {
 
 
 .footer {
-    margin-top: 20vh;
+    margin-top: 15vh;
     color: #a8b3c2;
     padding: 20px;
 
